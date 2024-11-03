@@ -1,10 +1,16 @@
-import NxWelcome from './nx-welcome';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { RecoilRoot } from 'recoil';
+import { Home } from './pages/Home/Home';
 
 export function App() {
   return (
-    <div>
-      <NxWelcome title="frontend-challenge" />
-    </div>
+    <RecoilRoot>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </BrowserRouter>
+    </RecoilRoot>
   );
 }
 

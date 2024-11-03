@@ -2,11 +2,23 @@
   "name": "@they-said/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "start": "nx serve frontend-challenge",
+    "build": "nx build frontend-challenge",
+    "test": "nx test frontend-challenge",
+    "lint": "nx lint frontend-challenge",
+    "format": "nx format:write"
+  },
   "private": true,
   "dependencies": {
+    "@types/lodash": "^4.17.13",
+    "clsx": "^2.1.1",
+    "formik": "^2.4.6",
     "react": "18.3.1",
-    "react-dom": "18.3.1"
+    "react-dom": "18.3.1",
+    "react-router-dom": "^6.27.0",
+    "recoil": "^0.7.7",
+    "uuid": "^11.0.2"
   },
   "devDependencies": {
     "@eslint/js": "^9.8.0",
@@ -31,6 +43,7 @@
     "@vitest/ui": "^1.3.1",
     "autoprefixer": "10.4.13",
     "babel-jest": "^29.7.0",
+    "daisyui": "^4.12.14",
     "eslint": "^9.8.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-import": "2.31.0",
